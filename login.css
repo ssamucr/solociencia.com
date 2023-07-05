@@ -9,18 +9,16 @@ body {
 
 }
 form {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 18px;
-  border-color: #42a54a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin: -20px auto 0;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    border-color: #42a54a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-
-}
 header{
     text-align: center;
 }
@@ -42,7 +40,7 @@ input[type="submit"] {
   cursor: pointer;
   border-radius: 18px;
   margin-top: 45px;
-  width: 100px;
+  width: 200px;
   text-align: center;
 
   
@@ -80,7 +78,7 @@ input[type="submit"]:hover {
 
 .logo{
     position: absolute;
-    top:1%;
+    top:-30%;
     left: 40%;
 }
 
