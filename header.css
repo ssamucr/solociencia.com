@@ -1,0 +1,150 @@
+/* Estilo para el encabezado en general */
+
+.encabezado {
+    position: sticky;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+@keyframes rotar {
+    0% {transform: rotate3d(1,1,1, 0deg);}
+    100% {transform: rotate3d(1,1,1, 360deg);}
+}
+
+.encabezado.active {
+    background-color: white;
+}
+
+.encabezado.active .logo {
+    animation-name: rotar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.encabezado.active a,
+.encabezado.active h1 {
+    color: black;
+}
+
+.encabezado.active a:hover {
+    color: white;
+    background-color: black;
+}
+
+.encabezado.active .red-social img {
+    filter: invert(100%);
+}
+
+.encabezado.active .red-social {
+    background-color: black;
+}
+
+/* Estilo para la parte superior del encabezado (logo, titulo y redes) */
+
+.encabezado-superior {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 60vw;
+}
+
+.logo {
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    width: 20vw;
+}
+
+/* Código que consiste en dar estilo a los iconos de redes sociales */
+
+.red-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+  
+.red-social img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    transition: filter 0.3s;
+}
+  
+#twitter:hover {
+    background-color: #1DA1F2;
+}
+
+#instagram:hover {
+    background-color: #E1306C;
+}
+
+#google:hover {
+    background-color: #F4B400;
+}
+
+/* Invierte el color negro de los png a blanco */
+
+.red-social:hover img {
+    filter: invert(100%);
+} 
+
+/* Estilo para la navbar superior */
+
+.navegacion ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion ol li {
+    text-align: center;
+}
+
+.navegacion ol li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    width: 14vw;
+    font-weight: bold;
+    font-size: 0.7em;
+    transition: all 0.5s ease;
+}
+
+.navegacion ol li a:hover {
+    color: #CCED5C;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.scroll {
+    height: 300vh;
+}

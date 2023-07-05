@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    
+    <header class="encabezado">
+        <div class="encabezado-superior">
+            <div class="logo-titulo">
+                <img class="logo" src="./img/logo.png" alt="logo de solociencia.com">
+                <h1 class="titulo-principal">SOLOCIENCIA.COM</h1>
+            </div>
+            <div class="redes">
+                <a href="#" class="red-social" id="twitter">
+                    <img src="./img/twitter.png" alt="Enlace a sitio de twitter">
+                </a>
+                <a href="#" class="red-social" id="instagram">
+                    <img src="./img/instagram.png" alt="Enlace a sitio de instagram">
+                </a>
+                <a href="#" class="red-social" id="google">
+                    <img src="./img/google.png" alt="Enlace a navegador de google">
+                </a>
+            </div>
+        </div>
+          
+        <nav class="navegacion">
+            <ol class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Registrarse en el curso de ciencias naturales</a></li>
+                <li><a href="#">Registrarse en el curso de Química y Biología</a></li>
+                <li><a href="#">Registrarse en el curso de Programación</a></li>
+                <li><a href="#">Referencias</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2></h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LK7eHoocQlE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p></p>
+        </section>
+    </main>
+
+    <script>
+        const nav = document.querySelector('.encabezado');
+        window.addEventListener('scroll', function() {
+            nav.classList.toggle('active', window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>
