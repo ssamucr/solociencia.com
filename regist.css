@@ -21,9 +21,6 @@ form {
   
 
 }
-header{
-    text-align: center;
-}
 label {
   display: block;
   margin-bottom: 10px;
@@ -58,7 +55,6 @@ input[type="submit"]:hover {
     top: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 700px;
 
 }
@@ -71,22 +67,7 @@ input[type="submit"]:hover {
     width: 100%;
 }
 
-.section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+.COM{
+    color: white;
+    
 }
-
-.logo{
-    position: absolute;
-    top:1%;
-    left: 40%;
-}
-
-.password{
-    margin: top 30px;
-
-}
-
-
