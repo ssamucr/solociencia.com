@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-</head>
-<body>
-<form action="login.php" method="post">
-<label for="username">Username:</label>
-<input type="text" name="username" id="username">
-<label for="password">Password:</label>
-<input type="password" name="password" id="password">
-<input type="submit" value="Login">
-</form>
+    <section>
+        <header>
+            <h1 class="titulo">SOLOCIENCIA.COM</h1>
+            <div class="logo"> 
+                 <img src="logo.png" alt="" width="250px" height="250px">
+            </div>
+        </header>
+    </section>
+    <div class="formu">
+        <form action="login.php" method="post">
+            <div class="in">
+                <div>
+                    <label for="username">Username:</label>
+                <input type="text" name="username" id="username">
+                </div>
+                <div class="password">
+                    <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                </div>
+            </div>
+            <input type="submit" value="Login"> 
+            </form>
+    </div>
+
     
 </body>
 </html>
