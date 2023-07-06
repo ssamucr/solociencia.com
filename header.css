@@ -1,11 +1,9 @@
 /* Estilo para el encabezado en general */
 
 .encabezado {
-    position: sticky;
-    top: 0;
     color: white;
     width: 100%;
-    height: 25vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease;
@@ -16,11 +14,7 @@
     100% {transform: rotate3d(1,1,1, 360deg);}
 }
 
-.encabezado.active {
-    background-color: white;
-}
-
-.encabezado.active .logo {
+.encabezado .logo {
     animation-name: rotar;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -28,22 +22,8 @@
     animation-direction: normal;
 }
 
-.encabezado.active a,
-.encabezado.active h1 {
-    color: black;
-}
-
-.encabezado.active a:hover {
-    color: white;
-    background-color: black;
-}
-
-.encabezado.active .red-social img {
-    filter: invert(100%);
-}
-
-.encabezado.active .red-social {
-    background-color: black;
+.encabezado .red-social {
+    background-color: white;
 }
 
 /* Estilo para la parte superior del encabezado (logo, titulo y redes) */
@@ -115,6 +95,13 @@
 
 /* Estilo para la navbar superior */
 
+.navegacion {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 5px 0;
+}
+
 .navegacion ol {
     display: flex;
     list-style: none;
@@ -128,7 +115,7 @@
 
 .navegacion ol li a {
     display: inline-block;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: small;
     width: 14vw;
@@ -138,13 +125,8 @@
 }
 
 .navegacion ol li a:hover {
-    color: #CCED5C;
     padding: 5px 10px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 15px;
-}
-
-.scroll {
-    height: 300vh;
 }
