@@ -17,12 +17,9 @@ body {
 
 main {
     margin: 20px auto;
-    width: 70%;
-    border: 1px solid white;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.5), 0 0 4px rgba(255, 255, 255, 0.5);
+    width: 95%;
     color: white;
+    display: flex;
 }
 
 main section p a {
@@ -33,21 +30,21 @@ main section p a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.5), 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
 .video h2 {
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .video p {
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 .video iframe {
     margin: 15px 0;
-}
-
-.video1, .video2 {
-    margin-bottom: 80px;
 }
