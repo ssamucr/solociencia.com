@@ -21,6 +21,15 @@ form {
   
 
 }
+.logor{
+    height: 100px;
+    width: 100px;
+}
+.registrar{
+    text-align: center;
+}
+
+
 label {
   display: block;
   margin-bottom: 10px;
@@ -69,5 +78,5 @@ input[type="submit"]:hover {
 
 .COM{
     color: white;
-    
+
 }
