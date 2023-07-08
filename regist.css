@@ -1,13 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rotar {
+  0% {transform: rotate3d(1,1,1, 0deg);}
+  100% {transform: rotate3d(1,1,1, 360deg);}
+}
+
+.formu form .logo {
+  animation-name: rotar;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  margin: 20px;
+}
+
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: 'Courier New', Courier, monospace;
-    height: auto;
+    min-height: 100vh;
     background-color: #0d1117;
     color: white;
-
 }
+
 form {
   width: 300px;
   margin: 0 auto;
@@ -18,28 +37,24 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
 
-}
-.logor{
-    height: 100px;
-    width: 100px;
-}
 .registrar{
     text-align: center;
 }
 
-
 label {
   display: block;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
+
 input {
   width: 95%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 18px;
 }
+
 input[type="submit"] {
   background-color: #4CAF50;
   color: white;
@@ -50,22 +65,15 @@ input[type="submit"] {
   margin-top: 45px;
   width: 100px;
   text-align: center;
-
-  
-
 }
+
 input[type="submit"]:hover {
-  background-color: #42a54a;
-  
+  background-color: #28642d;
 }
 
 .formu{
-    position:absolute;
-    top: 200px;
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-
+    width: 100%;
+    margin: 20px 0;
 }
 
 .boton{
@@ -76,7 +84,6 @@ input[type="submit"]:hover {
     width: 100%;
 }
 
-.COM{
-    color: white;
-
+.copy {
+  margin: 10px auto;
 }
