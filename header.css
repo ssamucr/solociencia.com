@@ -1,11 +1,10 @@
+
 /* Estilo para el encabezado en general */
 
 .encabezado {
-    position: sticky;
-    top: 0;
     color: white;
     width: 100%;
-    height: 25vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease;
@@ -16,11 +15,7 @@
     100% {transform: rotate3d(1,1,1, 360deg);}
 }
 
-.encabezado.active {
-    background-color: white;
-}
-
-.encabezado.active .logo {
+.encabezado .logo {
     animation-name: rotar;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -28,22 +23,8 @@
     animation-direction: normal;
 }
 
-.encabezado.active a,
-.encabezado.active h1 {
-    color: black;
-}
-
-.encabezado.active a:hover {
-    color: white;
-    background-color: black;
-}
-
-.encabezado.active .red-social img {
-    filter: invert(100%);
-}
-
-.encabezado.active .red-social {
-    background-color: black;
+.encabezado .red-social {
+    background-color: white;
 }
 
 /* Estilo para la parte superior del encabezado (logo, titulo y redes) */
@@ -58,10 +39,11 @@
     align-items: center;
     height: 15vh;
     width: 60vw;
+    font-size: 1.5em;
 }
 
 .logo {
-    width: 50px;
+    width: 65px;
     background-color: white;
     border-radius: 50%;
     margin-right: 20px;
@@ -81,8 +63,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color: white;
     transition: background-color 0.3s;
@@ -115,6 +97,13 @@
 
 /* Estilo para la navbar superior */
 
+.navegacion {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 5px 0;
+}
+
 .navegacion ol {
     display: flex;
     list-style: none;
@@ -128,23 +117,17 @@
 
 .navegacion ol li a {
     display: inline-block;
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: small;
     width: 14vw;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 1.3em;
     transition: all 0.5s ease;
 }
 
 .navegacion ol li a:hover {
-    color: #CCED5C;
     padding: 5px 10px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 15px;
-}
-
-.scroll {
-    height: 300vh;
 }

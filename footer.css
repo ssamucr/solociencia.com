@@ -1,0 +1,73 @@
+/* Estilo para el footer en general */
+/* Estilo para la navbar inferior */
+
+.navegacion-menor {
+    background-color: white;
+    padding: 5px 0;
+}
+
+.navegacion-menor ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion-menor ol li {
+    text-align: center;
+}
+
+.navegacion-menor ol li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 14vw;
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: all 0.5s ease;
+}
+
+.navegacion-menor ol li a:hover {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.footer-inferior {
+    display: flex;
+    color: black;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+.footer-inferior .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 0.8em;
+}
+
+.footer-inferior .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.boton-logout {
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    background-color: #ED978C;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.boton-logout:hover {
+    color: black;
+    background-color: rgb(254, 95, 74);
+}

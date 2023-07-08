@@ -6,9 +6,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./footer.css">
 </head>
 <body>
-    
     <header class="encabezado">
         <div class="encabezado-superior">
             <div class="logo-titulo">
@@ -22,14 +22,46 @@
                 <a href="#" class="red-social" id="instagram">
                     <img src="./img/instagram.png" alt="Enlace a sitio de instagram">
                 </a>
-                <a href="#" class="red-social" id="google">
+                <a href="https://www.google.com/" class="red-social" id="google" target="_blank">
                     <img src="./img/google.png" alt="Enlace a navegador de google">
                 </a>
             </div>
         </div>
           
-        <nav class="navegacion">
-            <ol class="menu">
+    </header>
+    <!-- El nav se coloca fuera del header para que se quede pegado al realizar scroll -->
+    <nav aria-label="menu" class="navegacion">
+        <ol class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Registrarse en el curso de ciencias naturales</a></li>
+            <li><a href="#">Registrarse en el curso de Química y Biología</a></li>
+            <li><a href="#">Registrarse en el curso de Programación</a></li>
+            <li><a href="#">Referencias</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ol>
+    </nav>
+
+    <main>
+        <section class="video1 video">
+            <h2>Médicos, aplicaciones e inteligencia artificial - el futuro de los diagnósticos</h2>
+            <iframe width="408" height="230" src="https://www.youtube.com/embed/07_N3JouWok" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>PARA CONOCER MÁS SOBRE ESTE TEMA, HAGA <a href="https://www.youtube.com/watch?v=07_N3JouWok&ab_channel=DWDocumental" target="_blank">CLICK AQUÍ</a>.</p>
+        </section>
+        <section class="video2 video">
+            <h2>Aprueban nuevo medicamento contra el Alzheimer</h2>
+            <iframe width="408" height="230" src="https://www.youtube.com/embed/fyw3ny3HmcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>PARA CONOCER MÁS SOBRE ESTE TEMA, HAGA <a href="https://www.youtube.com/watch?v=fyw3ny3HmcQ&ab_channel=NM%C3%A1s" target="_blank">CLICK AQUÍ</a>.</p>
+        </section>
+        <section class="video3 video">
+            <h2>La ingeniería genética cambiará todo para siempre – CRISPR</h2>
+            <iframe width="408" height="230" src="https://www.youtube.com/embed/NMIc49qGt2g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>PARA CONOCER MÁS SOBRE ESTE TEMA, HAGA <a href="https://www.youtube.com/watch?v=NMIc49qGt2g&t=2s&ab_channel=EnPocasPalabras%E2%80%93Kurzgesagt" target="_blank">CLICK AQUÍ</a>.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav aria-label="menu-footer" class="navegacion-menor">
+            <ol class="menu-menor">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Registrarse en el curso de ciencias naturales</a></li>
                 <li><a href="#">Registrarse en el curso de Química y Biología</a></li>
@@ -38,21 +70,14 @@
                 <li><a href="#">Contáctanos</a></li>
             </ol>
         </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2></h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LK7eHoocQlE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p></p>
-        </section>
-    </main>
-
-    <script>
-        const nav = document.querySelector('.encabezado');
-        window.addEventListener('scroll', function() {
-            nav.classList.toggle('active', window.scrollY > 0)
-        })
-    </script>
+        <div class="footer-inferior">
+            <div class="copy">
+                <p>&copy; Solociencia.com, S.A. 2021, Todos los derechos reservados</p>
+            </div>
+            <div class="logout">
+                <a href="#" class="boton-logout">Logout</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
