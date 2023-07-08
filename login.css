@@ -1,13 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rotar {
+  0% {transform: rotate3d(1,1,1, 0deg);}
+  100% {transform: rotate3d(1,1,1, 360deg);}
+}
+
+.formu form section .logo {
+  animation-name: rotar;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
 body {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100vh;
     font-family: 'Courier New', Courier, monospace;
     background-color: #0d1117;
     color: white;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 form {
     padding: 30px;
     border: 1px solid #ccc;
@@ -16,16 +34,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 350px;
-  }
-  
-header{
-    text-align: center;
 }
+
 label {
   display: block;
   margin-bottom: 10px;
 }
+
 input {
   width: 95%;
   padding: 10px;
@@ -33,6 +48,7 @@ input {
   border-radius: 18px;
   margin-bottom:10px ;
 }
+
 input[type="submit"] {
   background-color: #4CAF50;
   color: white;
@@ -43,18 +59,14 @@ input[type="submit"] {
   margin-top: 45px;
   width: 200px;
   text-align: center;
-
-  
-
 }
+
 input[type="submit"]:hover {
-  background-color: #42a54a;
+  background-color: #28642d;
   
 }
 
 .formu{
-    position: relative;
-    top: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,41 +82,42 @@ input[type="submit"]:hover {
     text-align: left;
     color: white;
     text-decoration: none;
-    
 }
 
-.section{
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+}
+
+section .logo {
+  margin-left: 20px;
 }
 
 .logo-titulo {
     display: flex;
     align-items: center;
     height: 15vh;
-  width: 60vw;
+    width: 60vw;
 }
+
 .password{
     margin: top 30px;
     text-align: left;
-
-}
-
-.logo {
-    width: 50px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 20px;
 }
 
 .Enlace{
   color: white;
   text-decoration: none;
   margin-top:100px;
+  font-style: italic;
+  font-weight: bold;
 }
 
+.Enlace:hover {
+  color: #42a54a;
+}
 
-
-
+.copy {
+  margin: 10px auto;
+}

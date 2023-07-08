@@ -6,6 +6,7 @@
     <title>Log In</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <header class="encabezado">
@@ -15,17 +16,19 @@
                 <h1 class="titulo-principal">SOLOCIENCIA.COM</h1>
             </div>
             <div class="redes">
-                <a href="#" class="red-social" id="twitter">
+                <a href="https://twitter.com/so1ociencia?t=6ekBrZ1-4X5KIK_cF_Gacw&s=09" class="red-social" id="twitter" target="_blank">
                     <img src="./img/twitter.png" alt="Enlace a sitio de twitter">
                 </a>
-                <a href="https://instagram.com/so1ociencia?igshid=Y2IzZGU1MTFhOQ==" class="red-social" id="instagram">
+                <a href="https://www.instagram.com/so1ociencia/?igshid=Y2IzZGU1MTFhOQ%3D%3D" class="red-social" id="instagram" target="_blank">
                     <img src="./img/instagram.png" alt="Enlace a sitio de instagram">
                 </a>
-                <a href="https://www.google.com/" class="red-social" id="google">
+                <a href="https://www.google.com/" class="red-social" id="google" target="_blank">
                     <img src="./img/google.png" alt="Enlace a navegador de google">
                 </a>
             </div>
         </div>
+    </header>
+
     <div class="formu">
         <form action="login.php" method="post">
             <section>
@@ -42,13 +45,19 @@
                 <input type="password" name="password" id="password">
                 </div>
                 <div>
-                    <a class="Enlace" href="regist.html">No tiene una cuenta? Registrese</a>
+                    <p>No tiene una cuenta? <a class="Enlace" href="regist.html">Regístrate</a></p>
                 </div>
             </div>
             <input type="submit" value="Login"> 
             </form>
     </div>
 
-    
+    <footer class="footer">
+        <div class="footer-inferior">
+            <div class="copy">
+                <p>&copy; Solociencia.com, S.A. 2021, Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
