@@ -1,0 +1,297 @@
+
+/* Estilo para el encabezado en general */
+
+.encabezado {
+    color: white;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+@keyframes rotar {
+    0% {transform: rotate3d(1,1,1, 0deg);}
+    100% {transform: rotate3d(1,1,1, 360deg);}
+}
+
+.encabezado .logo {
+    animation-name: rotar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.encabezado .red-social {
+    background-color: white;
+}
+
+/* Estilo para la parte superior del encabezado (logo, titulo y redes) */
+
+.encabezado-superior {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(217, 220, 255);
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    width: 60vw;
+    font-size: 1.5em;
+}
+
+.logo {
+    width: 65px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    width: 20vw;
+}
+
+/* Código que consiste en dar estilo a los iconos de redes sociales */
+
+.red-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+  
+.red-social img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    transition: filter 0.3s;
+}
+  
+#twitter:hover {
+    background-color: #1DA1F2;
+}
+
+#instagram:hover {
+    background-color: #E1306C;
+}
+
+#google:hover {
+    background-color: #F4B400;
+}
+
+/* Invierte el color negro de los png a blanco */
+
+.red-social:hover img {
+    filter: invert(100%);
+} 
+
+/* Estilo para la navbar superior */
+
+.navegacion {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 5px 0;
+}
+
+.navegacion ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion ol li {
+    text-align: center;
+}
+
+.navegacion ol li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 14vw;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: all 0.5s ease;
+}
+
+.navegacion ol li a:hover {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.breakLine {
+    height: 10px;
+    background-color: white;
+}
+
+
+body {
+    background-color: #0d1117;
+    margin: 0;
+    padding: 0;
+}
+
+.tituloContactenos {
+    font-size: 36px;
+    text-align: left;
+    margin-left: 50px;
+    color: azure;
+}
+
+.tabla{
+    align-content: center;
+}
+
+.fotoPerfil {
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nombrePerfil {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: azure;
+    font-size: 30px;
+}
+
+.nombreCedulaYCarrera {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: azure;
+    font-size: 20px;
+}
+
+.blankCell {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: #0d1117;
+    font-size: 20px;
+}
+
+.resumenExperiencia {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    color: azure;
+    font-size: 20px;
+}
+
+.filledCell {
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    color: azure;
+    background-color: #8f5f5f;
+    width: 100px;
+    height: 20px;
+    vertical-align: middle;
+    border-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+.button:hover {
+    color:#0d1117;
+    background-color: azure;
+    border: 1px solid #8f5f5f;
+}
+
+/* Estilo para el footer en general */
+/* Estilo para la navbar inferior */
+
+.navegacion-menor {
+    background-color: rgb(217, 220, 255);
+    padding: 5px 0;
+}
+
+.navegacion-menor ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacion-menor ol li {
+    text-align: center;
+}
+
+.navegacion-menor ol li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    width: 14vw;
+    font-weight: bold;
+    font-size: 0.8em;
+    transition: all 0.5s ease;
+}
+
+.navegacion-menor ol li a:hover {
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.footer-inferior {
+    display: flex;
+    color: black;
+    padding-bottom: 5px;
+    background-color: rgb(217, 220, 255);
+}
+
+.footer-inferior .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    font-size: 0.8em;
+}
+
+.footer-inferior .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: rgb(217, 220, 255);
+}
+
+.boton-logout {
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+    background-color: #ED978C;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.boton-logout:hover {
+    color: black;
+    background-color: rgb(254, 95, 74);
+}
