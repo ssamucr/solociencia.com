@@ -53,4 +53,5 @@ main section p a {
     margin: 15px 0;
     width: 95%;
     border-radius: 40px;
+    border: none;
 }

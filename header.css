@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
 /* Estilo para el encabezado en general */
 
@@ -100,8 +104,11 @@
 .navegacion {
     position: sticky;
     top: 0;
-    background-color: white;
+    background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
     padding: 5px 0;
+    backdrop-filter: blur(100px);
 }
 
 .navegacion ol {
@@ -117,7 +124,7 @@
 
 .navegacion ol li a {
     display: inline-block;
-    color: black;
+    color: white;
     text-decoration: none;
     width: 14vw;
     font-weight: bold;
@@ -127,7 +134,7 @@
 
 .navegacion ol li a:hover {
     padding: 5px 10px;
-    background-color: black;
+    background-color: rgba(0,0,0,.3);
     color: white;
     border-radius: 15px;
 }

@@ -2,7 +2,9 @@
 /* Estilo para la navbar inferior */
 
 .navegacion-menor {
-    background-color: white;
+    background: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    box-shadow: 0 -15px 20px rgba(0,0,0,.4);
     padding: 5px 0;
 }
 
@@ -19,7 +21,7 @@
 
 .navegacion-menor ol li a {
     display: inline-block;
-    color: black;
+    color: white;
     text-decoration: none;
     width: 14vw;
     font-weight: bold;
@@ -29,16 +31,16 @@
 
 .navegacion-menor ol li a:hover {
     padding: 5px 10px;
-    background-color: black;
+    background-color: rgba(0,0,0,.3);
     color: white;
     border-radius: 15px;
 }
 
 .footer-inferior {
     display: flex;
-    color: black;
+    color: white;
     padding-bottom: 5px;
-    background-color: white;
+    background: rgba(0,0,0,.3);
 }
 
 .footer-inferior .copy {

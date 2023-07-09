@@ -1,59 +1,82 @@
-body {
-    font-family: 'Courier New', Courier, monospace;     
-    background-color: #0d1117;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+    background: linear-gradient(45deg, #19212d, #361f38, #434e1f, #4f322e, #25354e);
+    background-size: 400% 400%;
+    animation: fondo 8s ease-in-out infinite normal;
     color: white;
   }
-  
-  
 
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 18px;
-    margin-top: 45px;
-    width: 200px;
-    text-align: center;
-  
-    
-  
-  }
-  input[type="submit"]:hover {
-    background-color: #42a54a;
-    
-  }
+@keyframes fondo {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
+}
 
+main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
+  margin: 45px auto 0;
+  width: 200px;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #28642d;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}
 
 .formu{
   width: 500px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 25px;
   border: 1px solid #ccc;
   border-radius: 18px;
   border-color: #42a54a;
   display: flex;
   flex-direction: column;
+  background: rgba(0,0,0,.3);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  font-size: 1.2em;
 }
 
-  .innerformu label,
-  .innerformu input {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-
-  .registrar{
-    text-align: center;
-  }
-
+.innerformu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
 
 label {
-  display: block;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-.copy{
-  text-align: center;
+input[type="text"], input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 18px;
+  margin-bottom:10px ;
+  outline: none;
+  background: transparent;
+  color: white;
 }
