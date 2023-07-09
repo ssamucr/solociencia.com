@@ -1,0 +1,59 @@
+body {
+    font-family: 'Courier New', Courier, monospace;     
+    background-color: #0d1117;
+    color: white;
+  }
+  
+  
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 18px;
+    margin-top: 45px;
+    width: 200px;
+    text-align: center;
+  
+    
+  
+  }
+  input[type="submit"]:hover {
+    background-color: #42a54a;
+    
+  }
+
+
+.formu{
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  border-color: #42a54a;
+  display: flex;
+  flex-direction: column;
+}
+
+  .innerformu label,
+  .innerformu input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+  .registrar{
+    text-align: center;
+  }
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.copy{
+  text-align: center;
+}

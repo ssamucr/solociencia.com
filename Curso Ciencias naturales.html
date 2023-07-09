@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Curso Ciencias Naturales</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./cursoreg.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+  
+  <body>
+      <header class="encabezado">
+          <div class="encabezado-superior">
+              <div class="logo-titulo">
+                  <img class="logo" src="logo.png" alt="logo de solociencia.com">
+                  <h1 class="titulo-principal">SOLOCIENCIA.COM</h1>
+              </div>
+              <div class="redes">
+                  <a href="https://twitter.com/so1ociencia?t=6ekBrZ1-4X5KIK_cF_Gacw&s=09/" class="red-social" id="twitter">
+                      <img src="twitter.png" alt="Enlace a sitio de twitter">
+                  </a>
+                  <a href="https://instagram.com/so1ociencia?igshid=Y2IzZGU1MTFhOQ/" class="red-social" id="instagram">
+                      <img src="instagram.png" alt="Enlace a sitio de instagram">
+                  </a>
+                  <a href="https://www.google.com/" class="red-social" id="google" target="_blank">
+                      <img src="google.png" alt="Enlace a navegador de google">
+                  </a>
+              </div>
+          </div>     
+      </header>
+
+      <!-- El nav se coloca fuera del header para que se quede pegado al realizar scroll -->
+      <nav aria-label="menu" class="navegacion">
+        <ol class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="./Curso Ciencias naturales.html">Registrarse en el curso de ciencias naturales</a></li>
+            <li><a href="./Curso Quimica y Biologia.html">Registrarse en el curso de Química y Biología</a></li>
+            <li><a href="./Curso Programacion.html">Registrarse en el curso de Programación</a></li>
+            <li><a href="#">Referencias</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ol>
+      </nav>
+  
+<main>
+  <form>
+      <div class="formu"> 
+  
+  <section> 
+    <h1>CIENCIAS NATURALES</h1>
+    <p>¡Bienvenido(a) al formulario de registro del curso de ciencias naturales!</p>
+    <p>Por favor complete el siguiente formulario con sus datos:</p>
+  </section>   
+  
+  <br>
+  <div class="innerformu">
+      <label for="nombre">Nombre del participante:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+  
+      <label for="cedula">Cédula:</label>
+      <input type="text" id="cedula" name="cedula" required>
+    </div>
+  
+    <br>
+      <label for="fecha">Fecha de Inicio del Curso:</label>
+      <label for="opcion1" class="radio-label">
+          <input type="radio" id="opcion1" name="fechas">
+          20 de julio
+        </label>
+        
+        <label for="opcion2" class="radio-label">
+          <input type="radio" id="opcion2" name="fechas">
+          24 de octubre
+        </label>
+        
+        <label for="opcion3" class="radio-label">
+          <input type="radio" id="opcion3" name="fechas">
+          14 de noviembre
+        </label>
+  
+      <input type="submit" value="Registrar">
+      <div class="registrar">
+      </div>
+    </form>
+  </main>
+    </div>
+  
+   <footer class="footer">
+          <nav aria-label="menu-footer" class="navegacion-menor">
+              <ol class="menu-menor">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Registrarse en el curso de ciencias naturales</a></li>
+                  <li><a href="#">Registrarse en el curso de Química y Biología</a></li>
+                  <li><a href="#">Registrarse en el curso de Programación</a></li>
+                  <li><a href="#">Referencias</a></li>
+                  <li><a href="#">Contáctanos</a></li>
+              </ol>
+          </nav>
+          <div class="footer-inferior">
+              <div class="copy">
+                  <p>&copy; Solociencia.com, S.A. 2021, Todos los derechos reservados</p>
+              </div>
+              <div class="logout">
+                  <a href="./login.html" class="boton-logout">Logout</a>
+              </div>
+          </div>
+      </footer>
+  
+  </body>
+  </html>
