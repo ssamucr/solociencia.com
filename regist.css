@@ -36,6 +36,9 @@ body {
   }
 
 form {
+    background: rgba(0,0,0,.3);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
   width: 300px;
   margin: 0 auto;
   padding: 20px;
@@ -59,8 +62,12 @@ label {
 input {
   width: 95%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #ccc;
   border-radius: 18px;
+  background: transparent;
+  outline: none;
+  color: white;
 }
 
 input[type="submit"] {
