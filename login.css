@@ -16,10 +16,20 @@
   animation-direction: normal;
 }
 
+
+@keyframes fondo {
+  0% {background-position: 0 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0 50%;}
+}
+
+
 body {
     height: 100vh;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #0d1117;
+    background: linear-gradient(45deg, #19212d, #361f38, #434e1f, #4f322e, #25354e);
+  background-size: 400% 400%;
+  animation: fondo 8s ease-in-out infinite normal;
     color: white;
     display: flex;
     flex-direction: column;
