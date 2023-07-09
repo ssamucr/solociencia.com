@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
 /* Estilo para el encabezado en general */
+
+.titulo-principal {
+    font-family: "Times New Roman", Times, serif;
+}
 
 .encabezado {
     color: white;
@@ -130,6 +146,7 @@
     font-weight: bold;
     font-size: 1.3em;
     transition: all 0.5s ease;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .navegacion ol li a:hover {

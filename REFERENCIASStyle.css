@@ -133,11 +133,12 @@ main {
     line-height: 50px;
     text-decoration: none;
     color: black;
+    transition: 0.2s;
 }
 
 .elementLink:hover {
-    color: rgb(42, 47, 100);
-    background-color: rgb(217, 220, 255);
+    color: white;
+    background-color: #031FA2;
 }
 
 .tituloTablaPeriodica {

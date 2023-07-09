@@ -86,11 +86,12 @@ body {
     width: 100px;
     height: 20px;
     vertical-align: middle;
-    border-width: 100px;
     margin: 40px auto;
     border: 1px solid white;
     text-decoration: none;
     padding: 5px;
+    transition: 0.2s;
+    border-radius: 10px;
 }
 
 .button:hover {
