@@ -35,12 +35,30 @@ form {
     100% {transform: rotate3d(1,1,1, 360deg);}
 }
 
+.logo {
+    width: 65px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
 .encabezado .logo {
     animation-name: rotar;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
+}
+
+.red-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
 }
 
 .encabezado .red-social {
@@ -62,13 +80,6 @@ form {
     font-size: 1.5em;
 }
 
-.logo {
-    width: 65px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
 .redes {
     display: flex;
     align-items: center;
@@ -78,17 +89,6 @@ form {
 }
 
 /* Código que consiste en dar estilo a los iconos de redes sociales */
-
-.red-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: white;
-    transition: background-color 0.3s;
-}
   
 .red-social img {
     display: block;
