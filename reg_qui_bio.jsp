@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="ISO-8859-1">
-<title>Registro Química y Biología</title>
+<title>Registro Quï¿½mica y Biologï¿½a</title>
 <style>
     body {
         background: linear-gradient(45deg, #19212d, #361f38, #434e1f, #4f322e, #25354e);
@@ -32,28 +32,28 @@
 </head>
 <body>
 <%
-    // Obtener los parámetros del formulario
+    // Obtener los parï¿½metros del formulario
     String nombre = request.getParameter("nombre");
     String cedula = request.getParameter("cedula");
     String fechaInicio = request.getParameter("fechas");
 
- 	// Configurar la conexión a la base de datos
+ 	// Configurar la conexiï¿½n a la base de datos
     String ruta = "jdbc:mysql://localhost:3306/Semestral";
     String usuario= "root";
     String pass = "";
     
-    // Establecer la conexión con la base de datos
+    // Establecer la conexiï¿½n con la base de datos
     Class.forName("com.mysql.jdbc.Driver");
     Connection dbconect = DriverManager.getConnection(ruta, usuario, pass);
     Statement dbstatement = dbconect.createStatement();
 
     // Preparar la sentencia SQL para insertar los datos en la tabla matricula
-    String sql = "INSERT INTO matricula (cedula, id_curso, nombre_usuario, fecha_inic) VALUES ('" + cedula + "', 'Química y Biología', '" + nombre + "', '" + fechaInicio + "')";
+    String sql = "INSERT INTO matricula (cedula, id_curso, nombre_usuario, fecha_inic) VALUES ('" + cedula + "', 'Quï¿½mica y Biologï¿½a', '" + nombre + "', '" + fechaInicio + "')";
 
  	// Ejecutar la sentencia SQL
    	dbstatement.executeUpdate(sql);
     
-    // Cerrar la conexión
+    // Cerrar la conexiï¿½n
     dbconect.close();
 %>
 </body>

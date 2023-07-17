@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="ISO-8859-1">
 <title>Registro</title>
@@ -33,30 +33,30 @@
 </head>
 <body>
 	<%
-	  // Obtener los parámetros del formulario
+	  // Obtener los parï¿½metros del formulario
 	  String cedula = request.getParameter("cedula");
 	  String nombre = request.getParameter("Nombre");
 	  String apellido = request.getParameter("Apellido");
 	  int edad = Integer.parseInt(request.getParameter("Edad"));
-	  String contraseña = request.getParameter("contrasena");
+	  String contraseï¿½a = request.getParameter("contrasena");
 	  
-	// Configurar la conexión a la base de datos
+	// Configurar la conexiï¿½n a la base de datos
 	    String ruta = "jdbc:mysql://localhost:3306/Semestral";
 	    String usuario= "root";
 	    String pass = "";
 	    
-	    // Establecer la conexión con la base de datos
+	    // Establecer la conexiï¿½n con la base de datos
 	    Class.forName("com.mysql.jdbc.Driver");
 	    Connection dbconect = DriverManager.getConnection(ruta, usuario, pass);
 	    Statement dbstatement = dbconect.createStatement();
 	    
 	 	// Preparar la sentencia SQL para insertar los datos en la tabla
-	    String sql = "INSERT INTO usuario (cedula, nombre, apellido, edad, contrasena) VALUES ('"+cedula+"', '"+nombre+"', '"+ apellido +"', '"+edad+"', '"+contraseña+"')";
+	    String sql = "INSERT INTO usuario (cedula, nombre, apellido, edad, contrasena) VALUES ('"+cedula+"', '"+nombre+"', '"+ apellido +"', '"+edad+"', '"+contraseï¿½a+"')";
 	    
 	    // Ejecutar la sentencia SQL
 	   	dbstatement.executeUpdate(sql);
 	    
-	    // Cerrar la conexión
+	    // Cerrar la conexiï¿½n
 	    dbconect.close();
 	%>
 </body>

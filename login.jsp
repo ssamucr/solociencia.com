@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="ISO-8859-1">
 <title>Log In</title>
@@ -23,7 +23,7 @@
 <script>
 	function mostrarPopup(mensaje) {
 	    alert(mensaje);
-	    window.location.href = "./login.html"; // Cambiar "./login.html" con la ruta correcta a la página de inicio de sesión
+	    window.location.href = "./login.html"; // Cambiar "./login.html" con la ruta correcta a la pï¿½gina de inicio de sesiï¿½n
 	}
 </script>
 </head>
@@ -34,12 +34,12 @@
 	%>
 	
 	<%
-    // Configurar la conexión a la base de datos
+    // Configurar la conexiï¿½n a la base de datos
     String ruta = "jdbc:mysql://localhost:3306/Semestral";
     String usuario = "root";
     String pass = "";
 
-    // Establecer la conexión con la base de datos
+    // Establecer la conexiï¿½n con la base de datos
     Class.forName("com.mysql.jdbc.Driver");
     Connection dbconect = DriverManager.getConnection(ruta, usuario, pass);
     Statement dbstatement = dbconect.createStatement();
@@ -50,16 +50,16 @@
     
  	// Verificar si se encontraron resultados en la consulta
     if (result.next()) {
-        // Las credenciales son correctas, redireccionar al usuario a la página HOME.html
-        response.sendRedirect("./HOME.html"); // Cambiar "./HOME.html" con la ruta correcta a la página HOME.html
+        // Las credenciales son correctas, redireccionar al usuario a la pï¿½gina HOME.html
+        response.sendRedirect("./HOME.html"); // Cambiar "./HOME.html" con la ruta correcta a la pï¿½gina HOME.html
     } else {
-        // Las credenciales son incorrectas o el usuario no está registrado
+        // Las credenciales son incorrectas o el usuario no estï¿½ registrado
         // Mostrar un mensaje de error utilizando JavaScript
         String mensaje = "Credenciales incorrectas o usuario no registrado";
        	out.println("<script>mostrarPopup('"+mensaje+"');</script>");
     }
 
-    // Cerrar la conexión a la base de datos
+    // Cerrar la conexiï¿½n a la base de datos
     result.close();
     dbstatement.close();
     dbconect.close();

@@ -8,16 +8,16 @@
   100% {transform: rotate3d(1,1,1, 360deg);}
 }
 
+section .logo {
+  margin-left: 20px;
+}
+
 .formu form section .logo {
   animation-name: rotar;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: normal;
-}
-
-section .logo {
-  margin-left: 20px;
 }
 
 
